@@ -10,7 +10,7 @@ public class Main {
         OrderService order=context.getBean(OrderService.class);
         order.placeOrder();
 
-        PaymentService pay=context.getBean(PaymentService.class);
-        pay.pay();
+        // PaymentService pay=context.getBean(PaymentService.class);
+        // pay.pay();
     }
 }
