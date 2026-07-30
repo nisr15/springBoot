@@ -3,6 +3,8 @@ package com.example;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.example.payment.PaymentService;
+
 @Component //It means objects for this class you should manage
 public class OrderService {
 
