@@ -1,6 +1,7 @@
 package com.example;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import com.example.payment.PaymentService;
@@ -14,7 +15,7 @@ public class OrderService {
 
     //Constructor Dependency Injection  -- Most Recommended
     @Autowired
-    public OrderService(PaymentService paymentService){
+    public OrderService(@Qualifier("upiPayment") PaymentService paymentService){  //Here qualifier is set as winner , qualifier name is camle case of Class name
         this.paymentService=paymentService;
     }
 
