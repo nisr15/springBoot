@@ -6,7 +6,8 @@ import org.springframework.stereotype.Component;
 
 import com.example.payment.PaymentService;
 
-@Component //It means objects for this class you should manage
+// @Component 
+//It means objects for this class you should manage
 public class OrderService {
 
     //Field Dependency Injection  -- Not recommended
@@ -14,8 +15,13 @@ public class OrderService {
     private PaymentService paymentService;
 
     //Constructor Dependency Injection  -- Most Recommended
-    @Autowired
-    public OrderService(@Qualifier("upiPayment") PaymentService paymentService){  //Here qualifier is set as winner , qualifier name is camle case of Class name
+    // @Autowired
+    // public OrderService(@Qualifier("upiPayment") PaymentService paymentService){  //Here qualifier is set as winner , qualifier name is camle case of Class name
+    //     this.paymentService=paymentService;
+    // }
+
+    // @Autowired
+    public OrderService(PaymentService paymentService){  //Here qualifier is set as winner , qualifier name is camle case of Class name
         this.paymentService=paymentService;
     }
 
