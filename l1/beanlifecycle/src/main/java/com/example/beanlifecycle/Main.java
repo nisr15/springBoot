@@ -1,4 +1,4 @@
-package com.example.beanscopedemo;
+package com.example.beanlifecycle;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -9,11 +9,7 @@ public class Main {
 
         // OrderService order=context.getBean(OrderService.class);
         // order.placeOrder();
-        // OrderService order1=context.getBean(OrderService.class);
-        // if(order==order1){
-        //     System.out.println("true");
-        // }
-        //IOC by default created only one bean for one bean defination , which is singleton
-        
+        CartService cs=context.getBean(CartService.class);
+        System.out.println(cs.getName(1));
     }
 }

@@ -18,4 +18,7 @@ public class AppConfig {
         return new OrderService();
     }
 
+    //Here we are giving 2 bean definations for the IOC container , so created 2 different objects
+    // Which work when class is singleton
+
 }
