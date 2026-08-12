@@ -1,0 +1,6 @@
+2026-08-12 03:05:24.034524+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+DROP TABLE student [42102-240]
+2026-08-13 00:40:31.404996+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+drop table student [42102-240]
